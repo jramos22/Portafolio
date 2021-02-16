@@ -1,0 +1,31 @@
+#all-content{
+max-width: 1200px;
+background-color: white;
+margin: 0 auto;
+}
+h2 {
+  font-family: $titles;
+  font-size: 40px;
+}
+h3{
+  font-family: $titles;
+  font-size: 30px;
+}
+p{
+  font-family: $text;
+  font-size:  20px;
+}
+a{
+  font-family: $text;
+  font-size: 20px;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+

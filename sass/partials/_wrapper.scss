@@ -1,0 +1,25 @@
+.habilidades{
+  background-color: $habilidades;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.habilidades-cont{
+  float: left;
+  margin: 0px 129px 20px 130px ;
+}
+//Fin habilidades
+
+//Proyectos
+.proyectos{
+  background-color: $proyectos;
+  text-align: center;
+}
+.proyectos #img-proyectos{
+  padding-top: 10px;
+  width: 150px;
+}
+.proyectos #flechas{
+  height: 50px;
+  width: 100px;
+}
+
