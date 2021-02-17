@@ -1,3 +1,4 @@
+
 .habilidades{
   background-color: $habilidades;
   text-align: center;
@@ -5,7 +6,11 @@
 }
 .habilidades-cont{
   float: left;
-  margin: 0px 129px 20px 130px ;
+  width: 33%;
+}
+.habilidades-cont img{
+  height: 100px;
+  width: 200px;
 }
 //Fin habilidades
 
@@ -13,6 +18,7 @@
 .proyectos{
   background-color: $proyectos;
   text-align: center;
+  margin-bottom: 50px;
 }
 .proyectos #img-proyectos{
   padding-top: 10px;
@@ -21,5 +27,34 @@
 .proyectos #flechas{
   height: 50px;
   width: 100px;
+  margin-bottom: 10px ;
+}
+.contenidoModal ul li{
+  float: left;
+  padding: 40px;
+}
+.contenidoModal img{
+  width: 500px;
+  height: 300px;
+}
+
+//fin proyectos
+//conocimientos
+
+.conocimientos{
+  background-color: $cont-conoci;
+  padding: 20px 40px 40px 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.conoci-cont{
+  background-color: $head-conoci;
+}
+.conoci-cont ul li{
+  float: left;
+  padding: 70px;
+}
+.conoci-cont img{
+  width: 200px;
 }
 

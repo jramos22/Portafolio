@@ -1,0 +1,38 @@
+.footer{
+  background-color: $footer;
+}
+.footer ul{
+  float: left;
+}
+.footer ul li a{
+  color: white;
+}
+.footer-seccion{
+  width: 33%;
+  float: left;
+  padding-top: 20px;
+}
+.footer h3{
+  color: $foo-title;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+.footer p{
+  color: white;
+}
+.footer-seccion ul li{
+  float: left;
+  padding: 10px;
+}
+.footer-seccion ul.footer-menu li{
+  clear: left;
+}
+.footer-seccion img{
+  width: 50px;
+}
+.footer-seccion p{
+  padding-left: 110px;
+}
+

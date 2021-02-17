@@ -372,8 +372,8 @@ li {
   position: absolute;
   z-index: 1;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 1200px;
+  height: 47%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8); }
 
@@ -382,11 +382,13 @@ li {
 
 .modal ul li {
   padding-top: 2.188%;
-  padding-left: 18.75%; }
+  padding-left: 18.75%;
+  clear: both; }
 
 .modal li a {
   color: grey;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 20px; }
 
 .modal li a:hover {
   color: white;
@@ -401,7 +403,8 @@ li {
 .cerrar a {
   font-weight: 100;
   text-align: center;
-  padding: 30%; }
+  padding: 30%;
+  color: white; }
 
 .cerrar a:hover {
   color: #373737; }
@@ -416,11 +419,16 @@ li {
 
 .habilidades-cont {
   float: left;
-  margin: 0px 129px 20px 130px; }
+  width: 33%; }
+
+.habilidades-cont img {
+  height: 100px;
+  width: 200px; }
 
 .proyectos {
   background-color: #9099A2;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
 
 .proyectos #img-proyectos {
   padding-top: 10px;
@@ -428,4 +436,66 @@ li {
 
 .proyectos #flechas {
   height: 50px;
-  width: 100px; }
+  width: 100px;
+  margin-bottom: 10px; }
+
+.contenidoModal ul li {
+  float: left;
+  padding: 40px; }
+
+.contenidoModal img {
+  width: 500px;
+  height: 300px; }
+
+.conocimientos {
+  background-color: #D5D5D5;
+  padding: 20px 40px 40px 40px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.conoci-cont {
+  background-color: #96858F; }
+
+.conoci-cont ul li {
+  float: left;
+  padding: 70px; }
+
+.conoci-cont img {
+  width: 200px; }
+
+.footer {
+  background-color: #373737; }
+
+.footer ul {
+  float: left; }
+
+.footer ul li a {
+  color: white; }
+
+.footer-seccion {
+  width: 33%;
+  float: left;
+  padding-top: 20px; }
+
+.footer h3 {
+  color: #D6D86E;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center; }
+
+.footer p {
+  color: white; }
+
+.footer-seccion ul li {
+  float: left;
+  padding: 10px; }
+
+.footer-seccion ul.footer-menu li {
+  clear: left; }
+
+.footer-seccion img {
+  width: 50px; }
+
+.footer-seccion p {
+  padding-left: 110px; }
