@@ -29,15 +29,32 @@
   width: 100px;
   margin-bottom: 10px ;
 }
-.contenidoModal ul li{
+.contenidoModal ul{
+  padding: 0px;
+}
+.titulo2{
+  padding: 20px;
+  background-color: $footer;
+  color: $white;
+  margin: 0px;
+}
+#repos ul li{
   float: left;
-  padding: 40px;
+  width: 48%;
+  margin: 9px;
+  background-color: $white;
+  border:  2px solid black;
+}
+#repos h2 {
+  margin:20px 0px 20px 0px;
+}
+#repos ul li:hover{
+  border: 2px solid $red;
 }
 .contenidoModal img{
   width: 500px;
   height: 300px;
 }
-
 //fin proyectos
 //conocimientos
 

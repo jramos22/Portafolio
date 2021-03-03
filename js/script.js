@@ -19,7 +19,6 @@ for (let i = 0; i < botones.length; i += 1) {
     // Compara los Ids para entrar en el modal respectivo
     for (let j = 0; j < contenido.length; j += 1) {
       contenido[j].classList.add('ocultar');
-      flechas.classList.add('ocultar');
       if (contenido[j].getAttribute('id') === id) {
         contenido[j].classList.remove('ocultar');
       }
@@ -41,4 +40,9 @@ for (let i = 0; i < cierre.length; i += 1) {
       }
     }
   });
+}
+// eslint-disable-next-line no-unused-vars
+function closenav() {
+  contenido[0].classList.add('ocultar');
+  flechas.classList.remove('ocultar');
 }

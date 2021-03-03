@@ -11,18 +11,18 @@
 
 <body>
   <div id="all-content">
-    <div class="header">
+    <div class="header clearfix">
       <div class="about-me">
         <div class="menu clearfix">
           <a class="bottones" href="#modal1"><img class="menu-img" src="img/menu.png" alt="menu-img"></a>
-          <div id="modal1" class="contenido modal">
+          <div id="modal1" class="contenido modal clearfix">
             <div class="contenidoModal clearfix">
               <span class="cerrar clearfix"><a class="bottonesCierre" href="##modal1">X close</a></span>
               <ul>
-                <li><a href="#head">About me</a></li>
-                <li><a href="#habilidades">Skills</a></li>
-                <li><a href="#proyectos">Projects</a></li>
-                <li><a href="#conocimientos">Knowledge</a></li>
+                <li><a href="#head" onclick="closenav()">About me</a></li>
+                <li><a href="#habilidades" onclick="closenav()">Skills</a></li>
+                <li><a href="#proyectos" onclick="closenav()">Projects</a></li>
+                <li><a href="#conocimientos"onclick="closenav()">Knowledge</a></li>
               </ul>
             </div>
           </div>
@@ -71,19 +71,25 @@
       <div class="proyectos">
         <div class="precontenido">
           <img id="img-proyectos" src="./img/proyectos.png" alt="icono-proyectos">
-          <h2>Proyectos</h2>
-          <a class="oculto bottones" href="#modal2"><img id="flechas" src="./img/right-arrows.png" alt="flecha"></a>
+          <a class="oculto bottones" href="#modal2"><h2 class="titulo2">Ver proyectos y actividad en Github</h2></a>
         </div>
         <div id="modal2" class="contenido clearfix">
           <div class="contenidoModal clearfix">
-            <ul>
-              <li><a href="https://github.com/jramos22/Proyecto_web_Oso"><img src="./img/Proyecto1.png" alt="Proyecto1"></a></li>
-              <li><a href="https://github.com/jramos22/Pratica_PSD2_HTML"><img src="./img/Proyecto2.png" alt="Proyecto2"></a></li>
-              <li><a href="https://github.com/jramos22/practica-Examen"><img src="./img/Proyecto3.png" alt="Proyecto3"></a></li>
-              <li><a href="https://github.com/jramos22/PSD-to-HTML-----Esqueleto-HTML-2"><img src="./img/Proyecto4.png" alt="Proyecto4"></a></li>
-            </ul>
+            <div id="repos">
+              <h2>Proyectos</h2>
+              <ul class="clearfix">
+                <li><a href="https://github.com/jramos22/Proyecto_web_Oso"><img src="./img/Proyecto1.png" alt="Proyecto1"></a></li>
+                <li><a href="https://github.com/jramos22/Pratica_PSD2_HTML"><img src="./img/Proyecto2.png" alt="Proyecto2"></a></li>
+                <li><a href="https://github.com/jramos22/practica-Examen"><img src="./img/Proyecto3.png" alt="Proyecto3"></a></li>
+                <li><a href="https://github.com/jramos22/PSD-to-HTML-----Esqueleto-HTML-2"><img src="./img/Proyecto4.png" alt="Proyecto4"></a></li>
+              </ul>
+              <h2>Actividad en git Hub</h2>
+              <ul id="lista" class="clearfix">
+
+              </ul>
+            </div>
           </div>
-          <a class="bottonesCierre" href="##modal2"><img id="flechas" src="./img/flechas2.png" alt="flecha"></a>
+          <a class="bottonesCierre" href="##modal2"><h2 class="titulo2">Cerrar</h2></a>
         </div>
         </div>
       </div>
@@ -104,6 +110,24 @@
       </div>
       <!--fin de conocimientos-->
       <div class="footer clearfix">
+        <div id="modal3" class="contenido prefooter">
+          <a class="bottonesCierre cerrar" href="##modal3">Cerrar</a>
+          <div class="contenidoModal clearfix">
+          <form class="formulario" id="form-message">
+            <label for="name">Nombre</label>
+            <input id="name" class="formu" type="text" required>
+            <label for="email">Correo electrónico</label>
+            <input id="email" class="formu" type="text" required>
+            <label for="phone">Teléfono</label>
+            <input id="phone" class="formu" type="text" required>
+            <label for="subject">Asunto</label>
+            <input id="subject" class="formu" type="text" required>
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="formu" required></textarea>
+            <input type="submit" value="Enviar" id="send">
+          </form>
+        </div>
+      </div>
         <div class="footer-seccion">
           <ul class="footer-menu">
             <li><a href="#head">Sobre mi</a></li>
@@ -115,6 +139,7 @@
         <div class="footer-seccion">
           <h3>El Fracaso es parte de la vida, si no fracasas no aprendes
             y si no aprendes, no cambias </h3>
+            <a id="afooter" class="oculto bottones" href="#modal3">contactame</a>
         </div>
         <div class="footer-seccion">
           <p>Redes Sociales</p>
@@ -131,6 +156,7 @@
     <!--fin wrapper-->
   </div>
   <script src="js/script.js"></script>
+  <script src="js/git.js"></script>
 </body>
 
 </html
