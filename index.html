@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,155 @@
   <title>Portafolio</title>
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
+
 <body>
-  <h1>Hello World!</h1>
+  <div id="all-content">
+    <div class="header clearfix">
+      <div class="about-me">
+        <div class="menu clearfix">
+          <a class="bottones" href="#modal1"><img class="menu-img" src="img/menu.png" alt="menu-img"></a>
+          <div id="modal1" class="contenido modal clearfix">
+            <div class="contenidoModal clearfix">
+              <span class="cerrar clearfix"><a class="bottonesCierre" href="##modal1">X close</a></span>
+              <ul>
+                <li><a href="#head" onclick="closenav()">About me</a></li>
+                <li><a href="#habilidades" onclick="closenav()">Skills</a></li>
+                <li><a href="#proyectos" onclick="closenav()">Projects</a></li>
+                <li><a href="#conocimientos"onclick="closenav()">Knowledge</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-contenido clearfix">
+          <a name="head"></a>
+          <div class="I-picture">
+            <img class="yo" src="img/yo.jpg" alt="Imagen">
+            <ul>
+            <li><a href="https://www.facebook.com/josedaniel.ramosbarquero/"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/jose22ramos/"><img src="img/instagram (1).png" alt="Instagram"></a></li>
+            <li><a href="https://github.com/jramos22"><img src="img/github.png" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><img src="img/linkedin.png" alt="Linkidin"></a></li>
+            </ul>
+          </div>
+          <div class="I-picture">
+            <h3>Nombre</h3>
+            <p>Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Nam doloribus laborum enim.
+              Veniam tenetur totam commodi quo dignissimos laudantium perferendis dolorum quos error,
+              inventore excepturi aperiam similique expedita! Veritatis, reiciendis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fin de header-->
+    <div class="wrapper">
+      <a name="habilidades"></a>
+      <div class="habilidades clearfix">
+        <h2>Habilidades</h2>
+        <div class="habilidades-cont">
+          <img src="./img/habilidad1.jpg" alt="1">
+          <h3>Trabajo en equipo</h3>
+        </div>
+        <div class="habilidades-cont">
+          <img src="./img/habilidad2.png" alt="2">
+          <h3>Comunicación acertiva</h3>
+        </div>
+        <div class="habilidades-cont">
+          <img src="./img/habilidad3.jpg" alt="3">
+          <h3>Resolucion de problemas</h3>
+        </div>
+      </div>
+      <!--fin Habilidades-->
+      <a name="proyectos"></a>
+      <div class="proyectos">
+        <div class="precontenido">
+          <img id="img-proyectos" src="./img/proyectos.png" alt="icono-proyectos">
+          <a class="oculto bottones" href="#modal2"><h2 class="titulo2">Ver proyectos y actividad en Github</h2></a>
+        </div>
+        <div id="modal2" class="contenido clearfix">
+          <div class="contenidoModal clearfix">
+            <div id="repos">
+              <h2>Proyectos</h2>
+              <ul class="clearfix">
+                <li><a href="https://github.com/jramos22/Proyecto_web_Oso"><img src="./img/Proyecto1.png" alt="Proyecto1"></a></li>
+                <li><a href="https://github.com/jramos22/Pratica_PSD2_HTML"><img src="./img/Proyecto2.png" alt="Proyecto2"></a></li>
+                <li><a href="https://github.com/jramos22/practica-Examen"><img src="./img/Proyecto3.png" alt="Proyecto3"></a></li>
+                <li><a href="https://github.com/jramos22/PSD-to-HTML-----Esqueleto-HTML-2"><img src="./img/Proyecto4.png" alt="Proyecto4"></a></li>
+              </ul>
+              <h2>Actividad en git Hub</h2>
+              <ul id="lista" class="clearfix">
+
+              </ul>
+            </div>
+          </div>
+          <a class="bottonesCierre" href="##modal2"><h2 class="titulo2">Cerrar</h2></a>
+        </div>
+        </div>
+      </div>
+      <!--fin de proyectos-->
+      <a name="conocimientos"></a>
+      <div class="conocimientos">
+        <div class="conoci-cont clearfix">
+          <h2>Conocimientos</h2>
+          <ul>
+            <li><img src="./img/html.png" alt="html"></li>
+            <li><img src="./img/css-3.png" alt="css"></li>
+            <li><img src="./img/js.png" alt="js"></li>
+            <li><img src="./img/json.png" alt="json"></li>
+            <li><img src="./img/git.png" alt="git"></li>
+            <li><img src="./img/github2.png" alt="github"></li>
+          </ul>
+        </div>
+      </div>
+      <!--fin de conocimientos-->
+      <div class="footer clearfix">
+        <div id="modal3" class="contenido prefooter">
+          <a class="bottonesCierre cerrar" href="##modal3">Cerrar</a>
+          <div class="contenidoModal clearfix">
+          <form class="formulario" id="form-message">
+            <label for="name">Nombre</label>
+            <input id="name" class="formu" type="text" required>
+            <label for="email">Correo electrónico</label>
+            <input id="email" class="formu" type="text" required>
+            <label for="phone">Teléfono</label>
+            <input id="phone" class="formu" type="text" required>
+            <label for="subject">Asunto</label>
+            <input id="subject" class="formu" type="text" required>
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="formu" required></textarea>
+            <input type="submit" value="Enviar" id="send">
+          </form>
+        </div>
+      </div>
+        <div class="footer-seccion">
+          <ul class="footer-menu">
+            <li><a href="#head">Sobre mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+          </ul>
+        </div>
+        <div class="footer-seccion">
+          <h3>El Fracaso es parte de la vida, si no fracasas no aprendes
+            y si no aprendes, no cambias </h3>
+            <a id="afooter" class="oculto bottones" href="#modal3">contactame</a>
+        </div>
+        <div class="footer-seccion">
+          <p>Redes Sociales</p>
+          <ul>
+            <li><a href="https://www.facebook.com/josedaniel.ramosbarquero/"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/jose22ramos/"><img src="img/instagram (1).png" alt="Instagram"></a></li>
+            <li><a href="https://github.com/jramos22"><img src="img/github.png" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><img src="img/linkedin.png" alt="Linkidin"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--fin footer-->
+    </div>
+    <!--fin wrapper-->
+  </div>
   <script src="js/script.js"></script>
+  <script src="js/git.js"></script>
 </body>
+
 </html
