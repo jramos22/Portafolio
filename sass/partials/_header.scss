@@ -1,40 +1,50 @@
 .header{
   background-color: $head-conoci;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
+  padding-bottom: 2.5%;
+  margin-bottom: 4.167%;
 }
 .header-contenido{
   background-color: $cont-conoci;
-  margin: 10px 80px 10px 80px;
-  padding-bottom: 10px;
+  margin: 0.833% 6.667% 0.833% 6.667%;
+  padding-bottom: 0.833%;
 }
 .contenidomodal{
   height: 100%;
 }
-
 .menu-img{
-  width: 50px;
+  width: 4.167%;
   float: right;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 0.833%;
+  margin-right: 1.667%;
 }
 .yo{
-  padding: 20px 20px 0px 75px;
-  width: 300px;
+  margin: 1.667% 1.667% 0% 13%;
+  width: 58%;
+  border: solid 3px black;
+  animation-name: borde;
+  animation-duration: 5s;
+}
+@keyframes borde{
+  0%{}
+  25%{border-color: blue;}
+  50%{border-color: red;}
+  75%{border-color: green;}
+  100%{border-color: indigo;}
 }
 .header-contenido ul li {
   float: left;
-  padding: 10px;
+  padding: 2.3%;
+  width: 14%;
 }
 .header-contenido ul li a img{
-  width: 70px;
+  width: 100%;
 }
 .I-picture{
   float: left;
   width: 50%;
 }
 .I-picture p{
-  padding: 20px 20px 20px 0px;
+  padding: 2.667% 2.667% 2.667% 0%;
 }
 .modal{
   position: absolute;
@@ -46,38 +56,67 @@
   background-color: rgba(0,0,0,0.8);
 }
 .modal ul{
-padding-top: 5.313%;
+  padding-top: 5.313%;
 }
 .modal ul li{
-padding-top: 2.188%;
-padding-left: 18.75%;
-clear: both;
+  padding-top: 2.188%;
+  padding-left: 18.75%;
+  clear: both;
+}
+.redes a{
+  display: flex;
 }
 .modal li a{
-color: grey;
-text-decoration: none;
-font-size: 20px;
+  display: flex;
+  color: $grey;
+  text-decoration: none;
 }
 .modal li a:hover{
-color:white;
-text-decoration: underline;
+  color:$white;
+  text-decoration: underline;
+  transform: translateX(0.833%);
 }
 .cerrar{
-float: right;
-margin-top: 1%;
-margin-right: 2%;
-font-weight: bold;
+  float: right;
+  margin-top: 1%;
+  margin-right: 2%;
+  font-weight: bold;
 }
 .cerrar a{
-font-weight: 100;
-text-align: center;
-padding: 30%;
-color: white;
-text-decoration: none;
+  font-weight: 100;
+  text-align: center;
+  padding: 30%;
+  color: $white;
+  text-decoration: none;
 }
 .cerrar a:hover{
-color: red;
+  color: $red;
 }
 .ocultar {
-display: none;
+  display: none;
+}
+
+@media screen and (max-width:800px){
+  .I-picture{
+    float: left;
+    width: 100%;
+  }
+  .yo{
+    margin: 2.667% 2.667% 0% 22%;
+    width: 58%;
+    border: solid 3px black;
+    animation-name: borde;
+    animation-duration: 5s;
+  }
+  .header-contenido ul li {
+    float: left;
+    padding: 5%;
+    width: 14%;
+  }
+  .I-picture h3{
+    text-align: center;
+  }
+  .I-picture p{
+    padding: 4% 4% 4% 4%;
+  }
 }

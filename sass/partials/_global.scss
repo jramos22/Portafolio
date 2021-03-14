@@ -1,28 +1,33 @@
 #all-content{
 max-width: 1200px;
-background-color: white;
+background-color: $white;
 margin: 0 auto;
 position: relative;
 }
 h2 {
   font-family: $titles;
-  font-size: 40px;
+  @include fontsize(40px);
 }
 h3{
   font-family: $titles;
-  font-size: 30px;
+  @include fontsize(30px);
+}
+h4{
+  font-family: $titles;
+  @include fontsize(20px);
 }
 p{
   font-family: $text;
-  font-size:  20px;
+  @include fontsize(20px);
 }
 a{
   font-family: $text;
-  font-size: 20px;
+  @include fontsize(20px);
   text-decoration: underline;
+  transition: all, 1s;
 }
 a:hover{
-  color: red;
+  color: $red;
 }
 li{
   list-style: none;

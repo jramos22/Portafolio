@@ -1,65 +1,92 @@
 .footer{
+  position: relative;
   background-color: $footer;
 }
 .prefooter{
   background-color: $footer;
-  bottom: 10px;
+  bottom: 0.833%;
   position: absolute;
-  z-index: 1px;
+  z-index: 1;
 }
 a#afooter{
-  padding-left: 145px;
+  display: block;
   text-align: center;
-  color: white;
+  color: $white;
   text-decoration: underline;
 }
 a#afooter:hover{
-  color: red;
+  color: $red;
 }
 .cerrar{
-  color: white;
+  color: $white;
   float: right;
 }
+.footer #modal3{
+  width: 100%;
+
+  background-color: $footer;
+}
 form{
-  color: white;
+  color: $white;
   width: 16%;
-  margin: 0 auto;
+  margin-left: 20%;
 }
 .footer ul{
   float: left;
 }
 .footer ul li a{
-  color: white;
+  display: flex;
+  color: $white;
 }
-.footer a:hover{
+.footer ul li a:hover{
   color: red;
+  transform: translateX(10px);
+}
+.footer .redes li{
+  width:15%;
+}
+.footer .redes li a{
+  width: 100%;
+}
+.footer .redes img{
+  width: 100%;
+}
+.redes a:hover{
+  color: $red;
+  transform: translatey(10px);
 }
 .footer-seccion{
   width: 33%;
   float: left;
-  padding-top: 20px;
+  padding-top: 1.667%;
 }
-.footer h3{
+.footer h4{
   color: $foo-title;
-  font-size: 20px;
   font-weight: bold;
-  padding: 20px;
+  padding: 2%;
   text-align: center;
 }
 .footer p{
-  color: white;
+  color: $white;
 }
 .footer-seccion ul li{
   float: left;
-  padding: 10px;
+  padding: 5%;
 }
 .footer-seccion ul.footer-menu li{
   clear: left;
 }
 .footer-seccion img{
-  width: 50px;
+  width: 20%;
 }
 .footer-seccion p{
-  padding-left: 110px;
+  display: block;
+  text-align: center;
 }
+@media screen and (max-width:800px){
+  .footer-seccion{
+    width: 100%;
+    float: left;
+  }
 
+}

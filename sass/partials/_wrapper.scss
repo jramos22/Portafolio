@@ -2,15 +2,15 @@
 .habilidades{
   background-color: $habilidades;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 4.167%;
 }
 .habilidades-cont{
   float: left;
   width: 33%;
 }
 .habilidades-cont img{
-  height: 100px;
-  width: 200px;
+  height: 100%;
+  width: 70%;
 }
 //Fin habilidades
 
@@ -18,60 +18,79 @@
 .proyectos{
   background-color: $proyectos;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 4.167%;
 }
 .proyectos #img-proyectos{
-  padding-top: 10px;
-  width: 150px;
+  padding-top: 0.833%;
+  width: 12.5%;
 }
-.proyectos #flechas{
-  height: 50px;
-  width: 100px;
-  margin-bottom: 10px ;
+.proyectos a img{
+  width: 100%;
 }
 .contenidoModal ul{
   padding: 0px;
 }
 .titulo2{
-  padding: 20px;
+  padding: 1.667%;
   background-color: $footer;
   color: $white;
-  margin: 0px;
+  margin: 0%;
 }
 #repos ul li{
   float: left;
   width: 48%;
-  margin: 9px;
+  margin: 0.75%;
   background-color: $white;
   border:  2px solid black;
 }
 #repos h2 {
-  margin:20px 0px 20px 0px;
+  margin:0.75% 0% 0.75% 0%;
 }
 #repos ul li:hover{
   border: 2px solid $red;
 }
 .contenidoModal img{
-  width: 500px;
-  height: 300px;
+  width: 41.667%;
+  height: 25%;
 }
 //fin proyectos
 //conocimientos
 
 .conocimientos{
   background-color: $cont-conoci;
-  padding: 20px 40px 40px 40px;
+  padding: 1.667% 3.333% 3.333% 3.333%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 4.167%;
+}
+.conocimientos h2 {
+  padding-top: 3%;
 }
 .conoci-cont{
   background-color: $head-conoci;
 }
 .conoci-cont ul li{
   float: left;
-  padding: 70px;
+  width: 20%;
+  padding: 5.833%;
 }
 .conoci-cont img{
-  width: 200px;
+  width: 100%;
 }
+@media screen and (max-width:800px){
+  .habilidades h3{
+    @include fontsize(20px);
+  }
 
+  #repos ul li{
+    float: left;
+    width: 97%;
+    background-color: $white;
+    border:  2px solid black;
+  }
+  #repos h2{
+    @include fontsize(16px);
+  }
+  .conoci-cont ul li{
+    width: 20%;
+  }
+}

@@ -7,10 +7,10 @@ function contenedor(data, i) {
   const content = `
   <div class ="contgit">
   <h2 class="titulo">${data[i].name}</h2>
-  <p class="info">Lenguaje: ${data[i].language || 'no especificado'}</p>
-  <p class="info">URL: <a href="${data[i].html_url}">${data[i].html_url}</a></p>
-  <p class="info">creado: ${data[i].created_at}</p>
-  <p class="info">Ultima actualización: ${data[i].updated_at}</p>
+  <p class="info">Lenguage: ${data[i].language || 'no especificado'}</p>
+  <p class="info"><a href="${data[i].html_url}">go to repository</a></p>
+  <p class="info">created: ${data[i].created_at}</p>
+  <p class="info">Last Update: ${data[i].updated_at}</p>
   </div>`;
   lista.innerHTML = content;
 }
