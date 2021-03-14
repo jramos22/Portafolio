@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -447,6 +448,8 @@ li {
   .I-picture {
     float: left;
     width: 100%; }
+  .menu-img {
+    width: 10%; }
   .yo {
     margin: 2.667% 2.667% 0% 22%;
     width: 58%;
