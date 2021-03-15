@@ -1,8 +1,8 @@
 
 .habilidades{
   background-color: $habilidades;
-  text-align: center;
   margin-bottom: 4.167%;
+  text-align: center;
 }
 .habilidades-cont{
   float: left;
@@ -17,8 +17,8 @@
 //Proyectos
 .proyectos{
   background-color: $proyectos;
-  text-align: center;
   margin-bottom: 4.167%;
+  text-align: center;
 }
 .proyectos #img-proyectos{
   padding-top: 0.833%;
@@ -31,17 +31,17 @@
   padding: 0px;
 }
 .titulo2{
-  padding: 1.667%;
   background-color: $footer;
   color: $white;
+  padding: 1.667%;
   margin: 0%;
 }
 #repos ul li{
-  float: left;
-  width: 48%;
-  margin: 0.75%;
   background-color: $white;
   border:  2px solid black;
+  float: left;
+  margin: 0.75%;
+  width: 48%;
 }
 #repos h2 {
   margin:0.75% 0% 0.75% 0%;
@@ -50,17 +50,17 @@
   border: 2px solid $red;
 }
 .contenidoModal img{
-  width: 41.667%;
   height: 25%;
+  width: 41.667%;
 }
 //fin proyectos
 //conocimientos
 
 .conocimientos{
   background-color: $cont-conoci;
+  margin-bottom: 4.167%;
   padding: 1.667% 3.333% 3.333% 3.333%;
   text-align: center;
-  margin-bottom: 4.167%;
 }
 .conocimientos h2 {
   padding-top: 3%;
@@ -70,8 +70,8 @@
 }
 .conoci-cont ul li{
   float: left;
-  width: 20%;
   padding: 5.833%;
+  width: 20%;
 }
 .conoci-cont img{
   width: 100%;
@@ -82,10 +82,10 @@
   }
 
   #repos ul li{
-    float: left;
-    width: 97%;
     background-color: $white;
     border:  2px solid black;
+    float: left;
+    width: 97%;
   }
   #repos h2{
     @include fontsize(16px);
