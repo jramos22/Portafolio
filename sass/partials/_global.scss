@@ -4,6 +4,10 @@
   max-width: 1200px;
   position: relative;
 }
+#canvas{
+  background-color: $cont-conoci;
+  z-index: 1;
+}
 h2 {
   font-family: $titles;
   @include fontsize(40px);
