@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BurguerButton from './BurgerButton';
 export default function Header() {
     const [clicked, setClicked] = useState(false);
@@ -18,9 +18,9 @@ export default function Header() {
                 </div>
                 <div className='header_menu'>
                     <nav className={`header_menu_nav ${clicked ? 'header_menu_nav--active': ''}`}>
-                        <NavLink  onClick={clicked} to='/home' >Home</NavLink>
-                        <NavLink  onClick={clicked} to='/about'>About me</NavLink>
-                        <NavLink  onClick={clicked} to='/projects'>Projects</NavLink>
+                        <Link  onClick={clicked} to='/home' >Home</Link>
+                        <Link  onClick={clicked} to='/about'>About me</Link>
+                        <Link  onClick={clicked} to='/projects'>Projects</Link>
                         <a className='resume_button' href="https://drive.google.com/file/d/1BD89LkFMgeDAykwvfjEplVgkeh_bze4d/view?usp=sharing">Resume</a>
                     </nav>
                     <div className="desktop">
