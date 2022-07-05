@@ -1,0 +1,84 @@
+.about_content{
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    h2{
+        width: 70vw;
+        margin-top: 5vh;
+        font-size: 26px;
+    }
+    .about_content_main_img{
+        margin-top: 7vh;
+        margin-bottom: 5vh;
+        align-self: center;
+        width: 164px;
+        height: 164px;
+    }
+    .about_content_description{
+        p{
+            font-size: 16px;
+            strong{
+                color: $Gold;
+            }
+        }
+    }
+    
+}
+
+@media(min-width:1300px) {
+    .about_content{
+        overflow: hidden;
+        margin: 0vh 20vw;
+    }
+}
+//this is the part of the content of knowledge
+.about_content_main_knowledge{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Know_container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 42px;
+        height: 50px;
+    }
+}
+@media(min-width:1300px) {
+    .Know_container{
+        width: 33.33%;
+    }
+}
+//this is the part of the content of aditional knowledge
+.about_content_aditional_knowledge{
+    ul{
+        padding: 0vh 5vw;
+        font-size: 16px;
+        li{
+            margin-top: 1.5vh;
+            color: $White;
+        }
+    }
+    @media(min-width:1300px) {
+        ul{
+            padding: 0vh 2vw;
+            font-size: 26px;
+        }
+    }
+}
+//Button 
+.about_content_button_container{
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0vw;
+    .button{
+        text-align: center;
+    }
+}
+@media(min-width:1300px) {
+    .about_content_button_container{
+        margin: 8vh 0vw;
+    }
+}

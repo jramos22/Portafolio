@@ -1,0 +1,15 @@
+.button{
+    text-decoration: none;
+    padding: 18px 31px 18px 37px;
+    background-color: $DeepBlue;
+    border-radius: 28px;
+    border: 1px solid $Gold;
+    font-size: 18px;
+    width: 88px;
+    transition: all 0.7s;
+    &:hover{
+        background-color: $Coffee;
+        color: $LightBlue;
+        border-color: $White;
+    }
+}
