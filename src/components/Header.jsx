@@ -21,7 +21,7 @@ export default function Header() {
                         <NavLink  onClick={clicked}  activeclassName='active' to='/home' >Home</NavLink>
                         <NavLink  onClick={clicked} to='/about'>About me</NavLink>
                         <NavLink  onClick={clicked} to='/projects'>Projects</NavLink>
-                        <a className='resume_button' href="https://drive.google.com/file/d/1BD89LkFMgeDAykwvfjEplVgkeh_bze4d/view?usp=sharing">Resume</a>
+                        <a className='resume_button' href="https://drive.google.com/file/d/1Mn2HlBl4N8sjMYhIC0kcmJlxEzyvyeWo/view?usp=sharing">Resume</a>
                     </nav>
                     <div className="desktop">
                         <BurguerButton clicked={clicked} handleClick={handleClick}/>
