@@ -20,8 +20,8 @@ function App() {
   }, []);
   return (
       <Router>
-        <Header/>
           <Routes>
+            <Header/>
             <Route path='/about' element={<AboutMe />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/home' element={<Home />} />
