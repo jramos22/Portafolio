@@ -1,36 +1,36 @@
 body {
-    background-color: $Coffee;
+	background-color: $Coffee;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+	content: '';
+	clear: both;
+	display: table;
 }
 
-.content{
-    position: relative;
-    width: 90vw;
-    color: $Gold;
-    margin: 0px 5vw 0px 5vw;
-    @media(min-width: 768px){
-        width: 80vw;
-        margin: 0px 10vw 0px 10vw;
-    }
+.content {
+	position: relative;
+	width: 90vw;
+	color: $Gold;
+	margin: 0px 5vw 0px 5vw;
+	@media (min-width: 768px) {
+		width: 80vw;
+		margin: 0px 10vw 0px 10vw;
+	}
 }
-.styles-module_blinkingCursor__288eE{
-    z-index: -1;
+.styles-module_blinkingCursor__288eE {
+	z-index: -1;
 }
-body::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
+body::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
 }
-body::-webkit-scrollbar-thumb{
-    background: $Gold;
-    border: 2px solid $DeepBlue;
-    border-radius: 4px;
+body::-webkit-scrollbar-thumb {
+	background: $Gold;
+	border: 2px solid $DeepBlue;
+	border-radius: 4px;
 }
-body::-webkit-scrollbar-track{
-    background: $White;
-    border-radius: 4px;
+body::-webkit-scrollbar-track {
+	background: $White;
+	border-radius: 4px;
 }

@@ -1,45 +1,45 @@
 .header {
-    background-color: $DeepBlue;
-    width: 100%;
-    height: 62px;
-    display: flex;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid $White;
-    z-index: 1000;
-    .header_container {
-        width: 90vw;
-        margin: 0px 5vw 0px 5vw;
-        @media(min-width: 768px) {
-            width: 80vw;
-            margin: 0px 10vw 0px 10vw;
-        }
-    }
+	background-color: $DeepBlue;
+	width: 100%;
+	height: 62px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	border-bottom: 1px solid $White;
+	z-index: 1000;
+	.header_container {
+		width: 90vw;
+		margin: 0px 5vw 0px 5vw;
+		@media (min-width: 768px) {
+			width: 80vw;
+			margin: 0px 10vw 0px 10vw;
+		}
+	}
 
-    .header_logo {
-        margin-top: 10px;
-        width: 90%;
-        float: left;
+	.header_logo {
+		margin-top: 10px;
+		width: 90%;
+		float: left;
 
-        @media(min-width: 768px) {
-            width: 20%;
-        }
-    }
+		@media (min-width: 768px) {
+			width: 20%;
+		}
+	}
 
-    .header_menu {
-        margin-top: 15px;
-        width: 10%;
-        float: left;
-        z-index: 2;
+	.header_menu {
+		margin-top: 15px;
+		width: 10%;
+		float: left;
+		z-index: 2;
 
-        @media(min-width: 768px) {
-            width: 80%;
-        }
-    }
+		@media (min-width: 768px) {
+			width: 80%;
+		}
+	}
 }
-.resume_button{
-    @media(min-width:1024px){
-        padding: 5px;
-        border: 1px solid $Gold;
-    }
+.resume_button {
+	@media (min-width: 1024px) {
+		padding: 5px;
+		border: 1px solid $Gold;
+	}
 }
