@@ -44,7 +44,7 @@ export default function Header() {
 						</NavLink>
 						<a
 							className="resume_button"
-							href="https://drive.google.com/file/d/1LXl2bGjPEn-vP9JMgrg2A0OpXfTYaCNH/view?usp=sharing"
+							href="https://drive.google.com/file/d/1beb2eYvKA5bDTT2gb72B2WFL8OxKJGIa/view?usp=sharing"
 						>
 							Resume
 						</a>
